@@ -11,7 +11,7 @@ import SidebarCollapse from "../assets/images/sidebarcollapse.svg";
 function Sidebar() {
   const [collapse, setCollapse] = useState(false);
   return (
-    <div className='h-screen w-1/4 bg-[#EB6B9D] py-4 text-white flex flex-col'>
+    <div className='h-screen w-1/4 bg-gradient-to-b from-[#EB6B9D] to-[#FF5757B2] py-4 text-white flex-col hidden lg:flex'>
       <div className='flex px-9'>
         <img src={MainLogo} />
         <img src={TextLogo} />
@@ -44,19 +44,19 @@ function Sidebar() {
       </div>
 
       <ul className='mt-4'>
-        <li className='flex gap-7 items-center py-5 s-active px-9'>
+        <li className='flex gap-7 items-center py-4 s-active px-9 text-xl cursor-pointer'>
           <FaHome />
           <span>Home</span>
         </li>
-        <li className='flex gap-7 items-center py-5 px-9'>
+        <li className='flex gap-7 items-center py-4 px-9 text-xl cursor-pointer'>
           <GiTakeMyMoney />
           <span>My Earning</span>
         </li>
-        <li className='flex gap-7 items-center py-5 px-9'>
+        <li className='flex gap-7 items-center py-4 px-9 text-xl cursor-pointer'>
           <MdOutlineDesignServices />
           <span>My Services</span>
         </li>
-        <li className='flex gap-7 items-center py-5 px-9'>
+        <li className='flex gap-7 items-center py-4 px-9 text-xl cursor-pointer'>
           <GoPeople />
           <span>My Assets</span>
         </li>
