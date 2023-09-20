@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 function Booking() {
   return (
-    <div className='grow'>
+    <div className='h-screen overflow-auto grow'>
       <Navbar />
       <Bookings />
     </div>
