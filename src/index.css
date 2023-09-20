@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.s-active {
+  background-color: rgb(217, 217, 217, 0.15);
+}
+
+.t-active {
+  border-bottom: 2px solid #eb6b9d;
+  padding: 0 12px 12px 12px;
+}
+
+.t-active span {
+  color: #eb6b9d;
+}
