@@ -4,20 +4,23 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { GoPeople } from "react-icons/go";
 import { useState } from "react";
+import MainLogo from "../assets/images/logoupride.svg";
+import TextLogo from "../assets/images/textlogo.svg";
+import SidebarCollapse from "../assets/images/sidebarcollapse.svg";
 
 function Sidebar() {
   const [collapse, setCollapse] = useState(false);
   return (
     <div className='h-screen w-1/4 bg-[#EB6B9D] py-4 text-white flex flex-col'>
       <div className='flex px-9'>
-        <img src='/public/assets/images/logoupride.svg' />
-        <img src='/public/assets/images/textlogo.svg' />
+        <img src={MainLogo} />
+        <img src={TextLogo} />
       </div>
 
       <div className='w-full text-black px-9 mt-12 mb-5'>
         <div className='bg-white shadow p-3 rounded-2xl'>
           <div className='flex items-center gap-3 '>
-            <img src='/public/assets/images/sidebarcollapse.svg' alt='sidebar collapse' />
+            <img src={SidebarCollapse} alt='sidebar collapse' />
             <span>Rajarajeshwari Nagar</span>
             {collapse ? (
               <AiFillCaretUp className='text-[#EB6B9D] ml-auto' onClick={() => setCollapse(p => !p)} />

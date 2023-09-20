@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { format } from "date-fns";
 import { FaSearch, FaPlus } from "react-icons/fa";
+import ViewBooking from "../assets/images/bookings.svg";
 
 function Bookings() {
   const [bookings, setBookings] = useState([]);
@@ -133,7 +134,7 @@ function Bookings() {
       <div className='py-9 px-11 w-5/6'>
         <div className='flex gap-6'>
           <h2 className='text-black text-2xl'>View Bookings</h2>
-          <img src='/public/assets/images/bookings.svg' alt='Bookings' />
+          <img src={ViewBooking} alt='Bookings' />
           <div className='h-9 aspect-square ml-auto bg-[#d9d9d9]'></div>
         </div>
         <ul className='flex gap-12 mt-8 border-b mb-6'>
