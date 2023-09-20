@@ -31,11 +31,11 @@ function Sidebar() {
           {!collapse && (
             <div>
               <div className='border-b flex justify-between py-2'>
-                <span className='px-4 text-light text-xs text-gray-400'>Branch 2</span>
+                <span className='px-6 text-light text-xs text-gray-400'>Branch 2</span>
                 <input type='radio' className='accent-[#EB6B9D]' />
               </div>
               <div className='flex justify-between py-2'>
-                <span className='px-4 text-light text-xs text-gray-400'>Branch 3</span>
+                <span className='px-6 text-light text-xs text-gray-400'>Branch 3</span>
                 <input type='radio' className='accent-[#EB6B9D]' />
               </div>
             </div>

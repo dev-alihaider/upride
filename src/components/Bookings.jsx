@@ -123,15 +123,15 @@ function Bookings() {
         <div className='text-black text-3xl block lg:hidden cursor-pointer' onClick={() => setIsMenu(true)}>
           <RxHamburgerMenu />
         </div>
-        <div className='border shadow rounded-3xl md:py-1 md:pr-2 ml-auto md:ml-0 md:pl-4 flex items-center w-max cursor-pointer'>
+        <div className='border shadow rounded-3xl py-1 pr-2 ml-auto md:ml-0 pl-4 flex items-center w-max cursor-pointer'>
           <input
             type='text'
             placeholder='Search booking'
             value={searchQuery}
             onChange={handleSearchChange}
-            className='text-black focus:outline-none placeholder:text-[#0000002B] placeholder:text-lg hidden md:block w-[250px]'
+            className='text-black focus:outline-none placeholder:text-[#0000002B] placeholder:text-lg  md:w-[250px]'
           />
-          <div className='bg-gradient-to-r from-[#FB8085] to-[#FF5757] md:from-[#FF5757] md:to-[#FF575700] flex justify-center items-center p-3 md:p-2 rounded-full'>
+          <div className='bg-gradient-to-r from-[#FB8085] to-[#FF5757] md:from-[#FF5757] md:to-[#FF575700] flex justify-center items-center p-2 rounded-full'>
             <FaSearch />
           </div>
         </div>
@@ -169,11 +169,11 @@ function Bookings() {
                   {!collapse && (
                     <div>
                       <div className='border-b flex justify-between py-2'>
-                        <span className='px-4 text-light text-xs text-gray-400'>Branch 2</span>
+                        <span className='px-6 text-light text-xs text-gray-400'>Branch 2</span>
                         <input type='radio' className='accent-[#EB6B9D]' />
                       </div>
                       <div className='flex justify-between py-2'>
-                        <span className='px-4 text-light text-xs text-gray-400'>Branch 3</span>
+                        <span className='px-6 text-light text-xs text-gray-400'>Branch 3</span>
                         <input type='radio' className='accent-[#EB6B9D]' />
                       </div>
                     </div>
